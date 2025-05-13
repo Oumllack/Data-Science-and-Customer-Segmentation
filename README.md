@@ -1,17 +1,68 @@
 # Customer Segmentation Analysis
 
-## Overview
-This project analyzes customer data from a shopping mall to identify distinct customer segments using clustering techniques. The analysis helps understand customer behavior patterns and enables targeted marketing strategies.
+## Project Overview
+This project performs customer segmentation analysis using clustering techniques on a dataset of 200 customers. The analysis helps identify distinct customer groups for targeted marketing strategies.
 
-## Dataset
-The dataset contains information about 200 customers, including:
+## Dataset Overview
+The dataset contains customer information including:
 - Customer ID
 - Gender
 - Age
-- Annual Income (in thousands of dollars)
+- Annual Income (k$)
 - Spending Score (1-100)
 
+## Key Visualizations
+
+### 1. Customer Demographics and Spending Patterns
+![Customer Demographics Analysis](docs/images/detailed_analysis.png)
+*Distribution of customer demographics and spending patterns across different age groups and income levels*
+
+### 2. Customer Segmentation Results
+![Customer Segmentation](docs/images/customer_segmentation.png)
+*K-means clustering results showing 5 distinct customer segments based on income and spending patterns*
+
+### 3. Optimal Number of Clusters
+![Elbow Method](docs/images/elbow_method.png)
+*Elbow method analysis to determine the optimal number of clusters*
+
 ## Key Findings
+
+### Customer Segments Identified:
+
+1. **High-Value Customers (Cluster 1)**
+   - Average Age: 32.69 years
+   - Average Annual Income: $86.54k
+   - Average Spending Score: 82.69
+   - Characteristics: Young, high-income customers with high spending
+   - Marketing Strategy: Premium products, exclusive events, loyalty programs
+
+2. **Moderate Spenders (Cluster 2)**
+   - Average Age: 43.14 years
+   - Average Annual Income: $55.29k
+   - Average Spending Score: 49.57
+   - Characteristics: Middle-aged customers with moderate income and spending
+   - Marketing Strategy: Balanced product mix, family-oriented promotions
+
+3. **Young Spenders (Cluster 3)**
+   - Average Age: 25.52 years
+   - Average Annual Income: $26.04k
+   - Average Spending Score: 78.96
+   - Characteristics: Young customers with lower income but high spending
+   - Marketing Strategy: Trendy products, student discounts, social media campaigns
+
+4. **High-Income Conservative Spenders (Cluster 4)**
+   - Average Age: 45.22 years
+   - Average Annual Income: $88.20k
+   - Average Spending Score: 17.11
+   - Characteristics: Older, high-income customers with low spending
+   - Marketing Strategy: Quality-focused products, personalized service
+
+5. **Low-Value Customers (Cluster 5)**
+   - Average Age: 41.11 years
+   - Average Annual Income: $25.52k
+   - Average Spending Score: 20.91
+   - Characteristics: Middle-aged customers with low income and spending
+   - Marketing Strategy: Budget-friendly options, value promotions
 
 ### 1. Customer Demographics
 - **Age Distribution**: 
@@ -33,39 +84,6 @@ The dataset contains information about 200 customers, including:
   - Average: 50.20
   - Range: 1-99
   - Median: 50.00
-
-### 3. Customer Segments
-The analysis identified 5 distinct customer segments:
-
-1. **High-Value Customers** (Cluster 1)
-   - High income ($86,540)
-   - High spending score (82.13)
-   - Average age: 32.69
-   - Marketing Strategy: Premium products, loyalty programs
-
-2. **Moderate Spenders** (Cluster 0)
-   - Moderate income ($55,300)
-   - Moderate spending score (49.52)
-   - Average age: 42.72
-   - Marketing Strategy: Balanced product mix, regular promotions
-
-3. **Young Spenders** (Cluster 2)
-   - Lower income ($25,730)
-   - High spending score (79.36)
-   - Average age: 25.27
-   - Marketing Strategy: Trendy products, social media campaigns
-
-4. **High-Income Conservative Spenders** (Cluster 3)
-   - High income ($88,200)
-   - Low spending score (17.11)
-   - Average age: 41.11
-   - Marketing Strategy: Quality-focused products, exclusive deals
-
-5. **Low-Value Customers** (Cluster 4)
-   - Lower income ($26,300)
-   - Low spending score (20.91)
-   - Average age: 45.22
-   - Marketing Strategy: Budget-friendly options, value deals
 
 ### 4. Statistical Insights
 - Strong correlation between income and spending score for high-value customers
